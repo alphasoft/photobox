@@ -1,0 +1,57 @@
+2004-08-26 Qball Cow <Qball@qballcow.nl>
+	* Added gtk+-2.4 file chooser.
+
+2004-06-23 Qball Cow <qball@qballcow.nl>
+	* Added sv translation (thanks goes to Marcus Carlson)
+	* Bumped version to 0.061
+
+2004-06-19 Qball Cow <qball@qbalclow.nl>
+	* Added ES translation (thanks goes to Servilio Afre Puentes)
+	* Added an option to choose the default X cursor
+
+2004-04-08  Qball Cow	<qball@qballcow.nl>
+
+	* TODO: 		Added another request to it
+	* src/gcursor.c:	Fix for BIG endian
+	
+2004-04-06  Sven Herzberg  <herzi@abi02.de>
+
+	* .cvsignore,
+	* data/.cvsignore,
+	* po/.cvsignore,
+	* src/.cvsignore: update silently
+	* AUTHORS,
+	* COPYING, 
+	* INSTALL,
+	* Makefile.am,
+	* TODO,
+	* autogen.sh,
+	* configure.in,
+	* data/Makefile.am,
+	* data/gcursor.desktop.in,
+	* data/gcursor.glade,
+	* po/ChangeLog,
+	* po/POTFILES.in,
+	* po/de.po,
+	* src/Makefile.am,
+	* src/gcursor.c: initial commit to have it in cvs at last
+
+2004-04-01  Sven Herzberg  <herzi@abi02.de>
+
+	* data, glade: renamed directory to allow other content too
+	* data/gcursor.desktop.in: added menu entry in Applications > Desktop
+	Settings
+	* po: added directory for translation
+	* src/Makefile.am: did some cleanup
+	* src/gcursor.c: added i18n support, made iterations through directory
+	list easier and more flexible, removed GNOME 2.4 specific code as 2.4
+	understands gconf too, made update_animation() more robust, did some
+	code beautification
+	* AUTHORS: added me and a trailing line break
+	* configure.in: added support for config.h (make compile lines a lot
+	shorter), added i18n support, removed unneccessary code passages,
+	fixed library dependency code, removed GNOME 2.4 specific code as 2.4
+	understands gconf too
+	* Makefile.am: cleanup and beautification
+	* TODO: added a list of things that I'd like to see done
+

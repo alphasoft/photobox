@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE avg SYSTEM "../../doc/avg.dtd">
+
+<avg width="640" height="480" onkeydown="keyPressed">
+	<div id="screen" active="true" onmousedown="snapshot">
+
+		<camera id="camera" x="0" y="0" z="0" opacity="1"
+			width="640" height="480" device="/dev/video1394/0"
+				mode="1024x768_YUV422" framerate="15" />
+	</div>
+</avg>
+

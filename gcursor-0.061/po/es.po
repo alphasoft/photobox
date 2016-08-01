@@ -1,0 +1,45 @@
+# Spanish translation of gcursor.
+# Copyright (C) 2004 Qball Cow <qball@qballcow.nl>
+# This file is distributed under the same license as the gcursor package.
+# Servilio Afre Puentes <servilios@yahoo.com>, 2004.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gcursor 0.05\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-23 19:34+0200\n"
+"PO-Revision-Date: 2004-05-03 04:57-0400\n"
+"Last-Translator: Servilio Afre Puentes <servilios@yahoo.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/gcursor.desktop.in.h:1
+msgid "Cursor Selection"
+msgstr "Selección del cursor"
+
+#: data/gcursor.desktop.in.h:2
+msgid "Select a different cursor"
+msgstr "Seleccionar un cursor diferente"
+
+#: data/gcursor.glade.h:1
+msgid "Xcursor Selector"
+msgstr "Selector de Xcursor"
+
+#: data/gcursor.glade.h:2
+msgid "_Go To Theme Folder"
+msgstr "Ir a la carpeta de _temas"
+
+#: data/gcursor.glade.h:3
+msgid "_Install Theme"
+msgstr "_Instalar tema"
+
+#: data/gcursor.glade.h:4
+msgid "pixels"
+msgstr "píxeles"
+
+#: data/gcursor.glade.h:5
+msgid "size:"
+msgstr "tamaño:"

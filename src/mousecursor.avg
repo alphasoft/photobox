@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<avg width="640" height="480" onmousemove="onMouseMove">
+    <image id="mainimg" x="0" y="0" onmousedown="onMouseDown"
+        opacity = "1" href="/home/boxadmin/libavg/src/test/1x1_schachbrett.png"/>
+    <image id="mousecursor" sensitive="False" 
+        opacity="0.8" href="/home/boxadmin/libavg/src/test/rgb24-64x64.png" width="32" height="32"/>
+</avg>
+

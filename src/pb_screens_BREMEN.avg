@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!DOCTYPE avg SYSTEM "../../doc/avg.dtd">
+
+<avg width="1280" height="1024" onkeydown="keyPressed" >
+<!--
+<avg width="1280" height="1024" >
+-->
+
+ <div id="screensaver" active="true" onmouseup="sendClick" >
+<!--
+   <image id="WB_logo" x="920" y="76" z="1" href="../media/WB_logo.png" />
+   <image id="Marplon_logo" x="916" y="266" z="1" href="../media/Marplon_logo.png"  />
+-->
+  <image id="bgrd00" x="0" y="0" z="0" href="../media/scr01_bg.png" />
+
+  <words id="einfuehrung1" x="234" y="230" z="1" size="24" font="frutiger" weight="bold" parawidth="540"  color="ffda82" text="Hier kannst Du eine Postkarte von Dir zusammen mit Deinem Werder-Star ausdrucken lassen. " />
+  <words id="einfuehrung2" x="530" y="438" z="1" size="24" font="frutiger" weight="bold" parawidth="540"  color="ffda82" text="Der Automat fotografiert Dich vier Mal und Du entscheidest, welches Foto auf die Postkarte montiert und gedruckt wird. Die Postkarte kostet 3 €." />
+  <words id="einfuehrung3" x="530" y="560" z="1" size="24" font="frutiger" weight="bold" parawidth="540" color="ffa500" text="Weiter mit Taste." />
+
+  <words id="intro1" x="234" y="316" z="1" size="24" font="frutiger" italic="true" parawidth="540" color="ffda82" text="Here you can have a postcard printed of yourself together with your favourite Werder star." />
+  <words id="intro2" x="234" y="640" z="1" size="24" font="frutiger" italic="true" parawidth="566" color="ffda82" text="The camera will take 4 pictures of you and you can decide which one you want copied and printed on the postcard. The postcard costs 3 €." />
+  <words id="intro3" x="234" y="756" z="1" size="24" font="frutiger" italic="true" weight="bold" parawidth="566" color="ffa500" text="Press the key to start." /> 
+
+  <image id="bild0" x="500" y="14" z="1" opacity="0.2" href="../media/Ausschnitt1903.png" />
+  <image id="bild1" x="800" y="214" z="1" opacity="0.2" href="../media/Ausschnitt1912.png" />
+  <image id="bild2" x="200" y="414" z="1" opacity="0.2" href="../media/Borowka1992.png" />
+  <image id="bild3" x="800"  y="614" z="1" opacity="0.2" href="../media/Bratseth1994.png" />
+  <image id="bild4" x="500"  y="814" z="1" opacity="0.2" href="../media/DasDouble2004.png" />
+ </div>
+
+
+ <div id="motivauswahl" active="false" > 
+   <image id="bgrd01" x="0" y="0" z="0" href="../media/scr02_bg.png"/>
+<!--
+   <words id="Titelschrift" x="224" y="138" z="1" size="32" font="frutiger" weight="bold" parawidth="240" color="c04a12" text="WB Photobox alpha (V.0.12)" />
+-->
+   <image id="motiv1" x="200" y="300" z="2" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmousedown="onMouseDown" onmouseup="selectingMotiv" href="../media/Ausschnitt1903_kl.png" />
+   <image id="motiv2" x="200" y="500" z="2" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmousedown="onMouseDown" onmouseup="selectingMotiv" href="../media/Ausschnitt1912_kl.png" />
+   <image id="motiv3" x="500" y="500" z="2" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmousedown="onMouseDown" onmouseup="selectingMotiv" href="../media/Borowka1992_kl.png" />
+   <image id="motiv4" x="800"  y="500" z="2" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmousedown="onMouseDown" onmouseup="selectingMotiv" href="../media/Bratseth1994_kl.png" />
+   <image id="motiv5" x="500"  y="700" z="2" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmousedown="onMouseDown" onmouseup="selectingMotiv" href="../media/DasDouble2004_kl.png" />
+
+   <words id="wahl" x="518" y="140" size="24" font="frutiger" weight="bold" parawidth="270" color="ffda82" text="Wähle ein Motiv mit dem Trackball aus und bestätige Deine Wahl mit dem Taster" />
+   <words id="choose" x="518" y="360" size="24" font="frutiger" italic="true" parawidth="270" color="ffda82" text="Choose a scene with the trackerball and press the button to confirm." />
+   <image id="selected_motiv" x="450" y="30" z="2" opacity="0" href="../media/WB_logo.png" />
+
+ </div>
+
+
+ <div id="muenzeinwurf" active="false" onmouseup="sendClick">
+   <image id="bgrd02" x="0" y="0" z="0" opacity="1" href="../media/scr03_bg.png" />
+
+   <div id="selmotiv_container" x="299" y="310" z="1" width="699" height="496">
+     <image id="selmotiv" x="0" y="0" width="699" height="496" href="../media/DasDouble2004_gr.png" />
+   </div>
+   <words id="muenz" x="320" y="70" z="1" size="24" font="frutiger" parawidth="680" weight="bold" color="ffda82" text="Bitte wirf 3 € ein, um Deine Wahl zu bestätigen und mit dem Erstellen der Fotos zu beginnen." />
+   <words id="kein_wechsel" x="320" y="138" z="1" size="24" font="frutiger" weight="bold" color="ffda82" 
+          text="Beachte: Der Automat gibt kein Wechselgeld." />
+   <words id="coin" x="320" y="186" z="1" size="24" font="frutiger" parawidth="600" italic="true" color="ffda82" text="To confirm your choice and start taking pictures, please insert 3 €." />
+   <words id="no_change" x="320" y="248" z="1" size="24" font="frutiger" parawidth="688" italic="true" color="ffda82" 
+          text="Please note: The machine does not return change." />
+   <words id="anderes" x="320" y="818" z="1" size="24" parawidth="640" font="frutiger" weight="bold" color="ffda82" text="Wenn Du ein anderes Motiv auswählen möchtest, drücke bitte die Taste." />
+   <words id="other" x="320" y="890" z="1" size="24" parawidth="640" font="frutiger" italic="true" color="ffda82" text="If you want to select a different scene, press the button." />
+
+   <image id="Coins_ovl" x="95" y="420" z="2" opacity="0" href="../media/timeout_empty.png" />
+   <words id="Coins_sec" x="125" y="478" z="3" opacity="0" size="56" font="frutiger" weight="bold" color="106622" text="00" />
+   <words id="Coins_hint_de" x="225" y="478" z="3" size="24" opacity="0" font="frutiger" weight="bold" color="106622" text="sec bis zum Abbruch !" />
+   <words id="Coins_hint_en" x="225" y="510" z="3" size="24" opacity="0" font="frutiger" italic="true" color="106622" text="sec until abort !" />
+
+ </div>
+
+
+ <div id="camera_screen" active="false" onmousedown="processClick">
+   <image id="whitescreen" x="0" y="0" z="3" opacity="0" href="../media/whitescreen.png" />
+   <image id="bgrd03" x="0" y="0" z="-1" opacity="1" href="../media/scr04-05_bg.png" />
+
+   <image id="rand_maske" x="319" y="-7" z="1" opacity="1" href="../media/maske_camera.png" /> 
+   <image id="preview_maske" x="299" y="10" z="2" opacity="1" href="../media/DasDouble2004_po.png" />
+
+   <words id="posi" x="320" y="504" z="1" size="24" parawidth="660" font="frutiger" weight="bold"
+          color="ffda82" text="Setz Dich bitte so, dass Dein Kopf im hellen Oval vollständig zu sehen ist. Dann schaue oben in die Kamera und drücke die Taste, wenn Du bereit bist." />
+   <words id="posi_en" x="320" y="634" z="1" size="24" parawidth="660" font="frutiger" italic="true" color="ffda82" text="Please position yourself in a way that your head is entire visible in the light oval area. Look straight into the camera and press the key when you are ready." />
+
+   <words id="aufnahmen" x="290" y="514" z="1" opacity="0" size="24" font="frutiger" weight="bold" color="ffda82" text="Taste drücken zum Fotografieren ! Verbleibende Aufnahmen :" />
+   <words id="photos_to_take" x="290" y="546" z="1" opacity="0" size="24" font="frutiger" italic="true" color="ffda82" text="Press button to take photograph ! Remaining Snapshots :" />
+
+   <words id="aufnahmen_counter" x="630" y="690" z="1" opacity="0" size="56" font="frutiger" weight="bold" color="ffda82" text="4" />
+   <words id="warten1" x="328" y="190" opacity="0" size="24" font="frutiger" weight="bold" parawidth="600" color="ffda82" text="Bitte warten ..." />
+   <words id="wait1" x="328" y="222" opacity="0" size="24" font="frutiger" italic="true" parawidth="600" color="ffda82" text="Please wait ..." />
+
+   <camera id="camera" x="329" y="3" z="0" opacity="0" saturation="110" width="640" height="480"
+           device="/dev/video1394/0" mode="1024x768_YUV422" framerate="15" />
+
+   <image id="DoSnapshots_ovl" x="320" y="742" z="2" opacity="0" href="../media/timeout_empty.png" />
+   <words id="DoSnapshots_sec" x="356" y="800" z="3" opacity="0" font="frutiger" size="56" weight="bold" color="106622" text="  " />
+   <words id="DoSnapshots_hint_de" x="470" y="800" z="3" size="24" opacity="0" font="frutiger" weight="bold" color="106622" text="sec bis zum Beginn der Aufnahmen" />
+   <words id="DoSnapshots_hint_en" x="470" y="832" z="3" size="24" opacity="0" font="frutiger" italic="true" color="106622" text="sec until snapshots are taken" />
+
+
+ </div>
+
+ <div id="snapshot_select" active="false">
+   <image id="bgrd04" x="0" y="0" z="-1" href="../media/scr06_bg.png"/>
+
+   <div id="snap_cont1" x="200" y="390" z="1" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmouseup="selectingSnapshot" width="195" height="300">
+     <image id="snap1" x="0" y="0" href="../output/snapshot_01_flp.bmp"  />
+   </div>
+   <div id="snap_cont2" x="420" y="390" z="1" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmouseup="selectingSnapshot" width="195" height="300">
+     <image id="snap2" x="0" y="0" href="../output/snapshot_02_flp.bmp" />
+   </div>
+   <div id="snap_cont3" x="640" y="390" z="1" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmouseup="selectingSnapshot" width="195" height="300">
+     <image id="snap3" x="0" y="0" href="../output/snapshot_03_flp.bmp" />
+   </div>
+   <div id="snap_cont4" x="860" y="390" z="1" opacity="0.5" onmouseover="onMouseOver" onmouseout="onMouseOut" onmouseup="selectingSnapshot" width="195" height="300">
+     <image id="snap4" x="0" y="0" href="../output/snapshot_04_flp.bmp" />
+   </div>
+   <words id="auswahl" x="360" y="140" z="1" size="24" opacity="1" font="frutiger" weight="bold" parawidth="460"
+   color="ffda82" text="Welches Bild gefällt Dir am besten? Bitte mit dem Trackball auswählen und per Tastendruck bestätigen." />
+   <words id="selection_of_snapshot" x="360" y="270" z="1" size="24" opacity="1" font="frutiger" italic="true"
+   parawidth="460" color="ffda82" text="Which snapshot do you like best ? Please select with the trackerball and press the button to confirm." />
+   <image id="balken" x="196" y="0" z="0" opacity="1" href="../media/scr_balken.png" />
+
+   <image id="SnapSel_ovl" x="320" y="710" z="2" opacity="0" href="../media/timeout_empty.png" />
+   <words id="SnapSel_sec" x="356" y="760" z="3" opacity="0" font="frutiger" size="56" weight="bold" color="106622" text="  " />
+   <words id="SnapSel_hint_de" x="460" y="760" z="3" size="24" opacity="0" font="frutiger" weight="bold" color="106622" text="sec bis zur automatischen Auswahl" />
+   <words id="SnapSel_hint_en" x="460" y="796" z="3" size="24" opacity="0" font="frutiger" italic="true" color="106622" text="sec until automatic selection" />
+<!--
+   <image id="selected_snapshot" x="820" y="20" z="1" opacity="0" href="../output/snapshot_01.png" />
+-->
+ </div>
+
+
+ <div id="photomontage" active="false" onmouseup="sendClick">
+   <image id="bgrd05" x="0" y="0" z="0" href="../media/scr08_bg.png" />  
+
+   <image id="result" x="292" y="236" z="1" href="../output/snapshot_01_flp.bmp" />
+
+   <words id="bestaetigung" x="328" y="110" size="24" font="frutiger" weight="bold" parawidth="600" color="ffda82" text="Drück die Taste, dann wird die Postkarte gedruckt. " />
+   <words id="confirm" x="328" y="150" size="24" font="frutiger" italic="true" parawidth="600" color="ffda82" text="Press the button to print your card." />
+   <words id="rueck" x="328" y="770" opacity="1" size="24" font="frutiger" weight="bold" parawidth="600" color="ffda82" text="Wenn Du zu den Vorschaubildern zurück möchtest, musst Du den Trackball ganz nach unten rollen." />
+   <words id="return_to_prev" x="328" y="896" opacity="1" size="24" font="frutiger" italic="true" parawidth="600" color="ffda82" text="To go back to the snapshot previews, roll trackerball down to bottom of screen." />
+   <words id="warten2" x="328" y="150" opacity="0" size="24" font="frutiger" weight="bold" parawidth="600" color="ffda82" text="Photomontage läuft - bitte warten ..." />
+   <words id="wait2" x="328" y="182" opacity="0" size="24" font="frutiger" italic="true" parawidth="600" color="ffda82" text="Rendering image - please wait ..." />
+   <image id="hot_area" x="0" y="1020" z="1" onmouseover="sendReturn" href="../media/mousetrigger.png"  />
+
+   <image id="ConfPrint_ovl" x="95" y="420" z="2" opacity="0" href="../media/timeout_empty.png" />
+   <words id="ConfPrint_sec" x="125" y="478" z="2" opacity="0" font="frutiger" size="56" weight="bold" color="106622" text="  " />
+   <words id="ConfPrint_hint_de" x="235" y="478" z="3" size="24" opacity="0" font="frutiger" weight="bold" color="106622" text="sec bis zum Druck dieser Postkarte." />
+   <words id="ConfPrint_hint_en" x="235" y="510" z="3" size="24" opacity="0" font="frutiger" italic="true" color="106622" text="sec until this postcard is printed." />
+ </div>
+
+
+ <div id="waitscreen" active="false">
+    <image id="bgrd06" x="0" y="0" z="0" href="../media/scr09_bg.png" />
+    <video  id="huepfender_fussball" x="400" y="410" z="1" loop="true" href="../media/ballanim.avi" />
+    <words id="drucken1" x="280" y="270" z="2" opacity="1" size="24" font="frutiger" weight="bold" color="ffda82" text="Deine Postkarte wird gedruckt. Bitte einen Moment Geduld." />
+    <words id="drucken2" x="280" y="302" z="2" size="24" font="frutiger" weight="bold" color="ffda82" text="(Dauert ca. 15 - 20 Sek.)" />
+    <words id="printing1" x="280" y="348" z="2" size="24" font="frutiger" italic="true" color="ffda82" text="Printing your postcard. Please be patient." /> 
+    <words id="printing2" x="280" y="380" z="2" size="24" font="frutiger" italic="true" color="ffda82" text="(This takes 15 - 20 sec)" />
+ </div>
+
+ <div id="stoerung" active="false" >
+    <image id="bgrd_alert" x="0" y="0" z="0" href="../media/scr09_bg.png" />
+    <words id="nachricht" x="320" y="380" z="1" size="56" font="frutiger" weight="bold" color="106622" parawidth="640" text="Fehler !  Bitte Museumspersonal verständigen !"  />
+    <words id="message" x="320" y="460" z="1" size="56" font="frutiger" italic="true" color="106622" parawidth="640" text="Error ! Please consult museum staff !"  />
+ </div>
+
+</avg>

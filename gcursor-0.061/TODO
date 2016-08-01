@@ -1,0 +1,19 @@
+
+  TODO for gcursor
+  ================
+
+  * Instant apply for cursors
+    * investigate how instant apply can be implemented
+    * implment instant apply
+
+  * cursor selection
+    * try to find out which sizes are supported by a cursor theme
+    * present those sizes in a combo box
+
+  * i18n
+    * go through the gcursor.c and search for strings to be translated
+
+  * flexibility
+    * now that we can go through the list of directories more flexible we
+      should move the hardcoded stuff into gconf
+  

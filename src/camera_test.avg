@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE avg SYSTEM "../../doc/avg.dtd">
+
+<avg width="1280" height="1024">
+   <image id="bg" x="0" y="0" z="0" opacity="0" href="../media/scr01_bg.png" />
+
+   <camera id="camera" x="128" y="30" z="1" opacity="1" width="1024" height="768"
+          device="/dev/video1394/0" mode="1024x768_YUV422" framerate="15" />
+
+</avg>
